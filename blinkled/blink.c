@@ -22,26 +22,38 @@ void main(void) {
     WDTCTL = WDTPW | WDTHOLD;               // Stop watchdog timer
     PM5CTL0 &= ~LOCKLPM5;                   // Disable the GPIO power-on default high-impedance mode
                                             // to activate previously configured port settings
-    P1DIR |= 0x01;                          // Set P1.0 to output direction
+    P1DIR |= BIT0;                          // Set P1.0 to output direction
 
-    P4DIR |= 0x40;
+    P4DIR |= BIT6;
 
-    for(;;) {
-        volatile unsigned int i;            // volatile to prevent optimization
+    P1OUT |= BIT0;
+
+    P4OUT &= ~BIT6;
+
+//    while(1){
+//        P1OUT ^= BIT0;
+//        P4OUT ^= BIT6;
+//        _delay_cycles(1000000);
+//
+//    }
 
 
-        P4OUT ^= 0x40;                      // Toggle P1.0 using exclusive-OR
-        P1OUT ^= 0x01;                      // Toggle P1.0 using exclusive-OR
-
-        i = 50000;                          // SW Delay
-        do i--;
-        while(i != 0);
-
-
-        P4OUT ^= 0x40;                      // Toggle P1.0 using exclusive-OR
-        P1OUT ^= 0x01;                      // Toggle P1.0 using exclusive-OR
-        i = 50000;                          // SW Delay
-        do i--;
-        while(i != 0);
-    }
+//    for(;;) {
+//        volatile unsigned int i;            // volatile to prevent optimization
+//
+//
+//        P4OUT ^= 0x40;                      // Toggle P1.0 using exclusive-OR
+//        P1OUT ^= 0x01;                      // Toggle P1.0 using exclusive-OR
+//
+//        i = 50000;                          // SW Delay
+//        do i--;
+//        while(i != 0);
+//
+//
+//        P4OUT ^= 0x40;                      // Toggle P1.0 using exclusive-OR
+//        P1OUT ^= 0x01;                      // Toggle P1.0 using exclusive-OR
+//        i = 50000;                          // SW Delay
+//        do i--;
+//        while(i != 0);
+//    }
 }

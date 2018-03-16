@@ -1,0 +1,34 @@
+
+**** Build of configuration Debug for project rscom ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+'Building file: "../main.c"'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.6.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Code file/c-code/msp430/rscom" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.6.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR5969__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"../main.c", line 9: error #20: identifier "UTCTL0" is undefined
+"../main.c", line 9: error #20: identifier "SSEL0" is undefined
+"../main.c", line 10: error #20: identifier "UBR00" is undefined
+"../main.c", line 11: error #20: identifier "UBR10" is undefined
+"../main.c", line 12: error #20: identifier "UMCTL0" is undefined
+"../main.c", line 13: error #20: identifier "UCTL0" is undefined
+"../main.c", line 13: error #20: identifier "CHAR" is undefined
+"../main.c", line 14: error #20: identifier "ME1" is undefined
+"../main.c", line 14: error #20: identifier "UTXE0" is undefined
+"../main.c", line 14: error #20: identifier "URXE0" is undefined
+"../main.c", line 15: error #20: identifier "IE1" is undefined
+"../main.c", line 15: error #20: identifier "URXIE0" is undefined
+"../main.c", line 16: error #20: identifier "P2SEL" is undefined
+"../main.c", line 25: error #41: expected an identifier
+"../main.c", line 25: error #20: identifier "UART0RX_VECTOR" is undefined
+"../main.c", line 25: error #658-D: the modifier "interrupt" is not allowed on this declaration
+"../main.c", line 25: error #66: expected a ";"
+At end of source: warning #12-D: parsing restarts here after previous syntax error
+17 errors detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****

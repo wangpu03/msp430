@@ -26,7 +26,6 @@ void main(void){
     _BIS_SR(LPM0_bits+GIE);
 }
 
-
 // 如果有按键中断发生，延时之后，相当于排除抖动，再读取其中的值，若为高，则误判为中断；若为低，则确实发生该按键中断
 #pragma vector=PORT1_VECTOR
 __interrupt void PORT1_ISR(void){

@@ -16,26 +16,24 @@
 //  July 2013
 //***************************************************************************************
 
-#include <msp430.h>
+#include "msp430fr5969.h"
 
 void main(void) {
     WDTCTL = WDTPW | WDTHOLD;               // Stop watchdog timer
     PM5CTL0 &= ~LOCKLPM5;                   // Disable the GPIO power-on default high-impedance mode
                                             // to activate previously configured port settings
-    P1DIR |= BIT0;                          // Set P1.0 to output direction
+    P4DIR |= BIT0;                          // Set P1.0 to output direction
+//    PJDIR |= BIT6;
 
-    P4DIR |= BIT6;
 
-    P1OUT |= BIT0;
+//    PJOUT &= ~BIT6;
 
-    P4OUT &= ~BIT6;
+    while(1){
+        P4OUT ^= BIT0;
+//        PJOUT ^= BIT6;
+        _delay_cycles(100000);
 
-//    while(1){
-//        P1OUT ^= BIT0;
-//        P4OUT ^= BIT6;
-//        _delay_cycles(1000000);
-//
-//    }
+    }
 
 
 //    for(;;) {

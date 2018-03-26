@@ -7,8 +7,8 @@
  */
 void main(void){
 
-    WDTCTL = WDTPW+WDTHOLD;                   // Stop WDT
-    PM5CTL0 &= ~LOCKLPM5;                   // Disable the GPIO power-on default high-impedance mode
+    WDTCTL = WDTPW+WDTHOLD;                     // Stop WDT
+    PM5CTL0 &= ~LOCKLPM5;                       // Disable the GPIO power-on default high-impedance mode
 
     P1DIR |= BIT0;
 
@@ -17,12 +17,10 @@ void main(void){
 
     P1OUT |= BIT1+BIT0;
 
-
     P1IES |= BIT1;
     P1IE |= BIT1;
     P1IFG = 0x00;
 
-    //__enable_interrupt();       //¿ª×ÜÖÐ¶Ï
     _BIS_SR(LPM0_bits+GIE);
 }
 

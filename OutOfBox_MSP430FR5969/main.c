@@ -57,8 +57,8 @@ __no_init uint16_t dataArray[12289];
 #endif
 
 //-----------------------------------------------------------------------------
-int _system_pre_init(void)
-{
+int _system_pre_init(void){
+
     // Stop Watchdog timer
     WDT_A_hold(__MSP430_BASEADDRESS_WDT_A__);     // Stop WDT
 
@@ -106,7 +106,7 @@ int main(void){
     	// Toggle LED1 and LED2 to indicate OutOfBox Demo start
     	int i;
     	for (i=0;i<10;i++){
-            GPIO_toggleOutputOnPin(GPIO_PORT_P1, GPIO_PIN0);
+            GPIO_toggleOutputOnPin(GPIO_PORT_P1, GPIO_PIN0);  //异或所设置的值
             GPIO_toggleOutputOnPin(GPIO_PORT_P4, GPIO_PIN6);
             __delay_cycles(200000);
     	}

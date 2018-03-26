@@ -20,17 +20,17 @@
 
 void main(void) {
     WDTCTL = WDTPW | WDTHOLD;               // Stop watchdog timer
-    PM5CTL0 &= ~LOCKLPM5;                   // Disable the GPIO power-on default high-impedance mode
+    //PM5CTL0 &= ~LOCKLPM5;                   // Disable the GPIO power-on default high-impedance mode
                                             // to activate previously configured port settings
-    P4DIR |= BIT0;                          // Set P1.0 to output direction
+    P1DIR |= BIT0;                          // Set P1.0 to output direction
 //    PJDIR |= BIT6;
 
 
 //    PJOUT &= ~BIT6;
 
     while(1){
-        P4OUT ^= BIT0;
-//        PJOUT ^= BIT6;
+        P1OUT ^= BIT0;
+//      PJOUT ^= BIT6;
         _delay_cycles(100000);
 
     }

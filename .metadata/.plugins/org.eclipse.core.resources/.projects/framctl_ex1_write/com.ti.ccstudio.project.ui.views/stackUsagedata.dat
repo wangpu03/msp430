@@ -1,0 +1,137 @@
+<?xml version="1.0"?>
+<ofd>
+   <banner>MSP430 Object File Display PC v16.9.6.LTS</banner>
+   <copyright>Copyright (c) 2003-2017 Texas Instruments Incorporated</copyright>
+   <name>C:\Code file\c-code\msp430\framctl_ex1_write\Debug\framctl_ex1_write.out</name>
+   <call_graph>
+      <function>
+         <name>main</name>
+         <stack_size>0x10</stack_size>
+         <makes_indirect_call>false</makes_indirect_call>
+         <file>../framctl_ex1_write.c</file>
+         <line>0x40</line>
+         <address>0x10000</address>
+         <is_combined>false</is_combined>
+         <definition_seen>true</definition_seen>
+         <has_stack_usage_info>true</has_stack_usage_info>
+         <producer>TI MSP430 C/C++ Codegen PC v16.9.6.LTS Copyright (c) 2003-2017 Texas Instruments Incorporated</producer>
+         <callee>WDT_A_hold</callee>
+         <callee>GPIO_setAsOutputPin</callee>
+         <callee>PMM_unlockLPM5</callee>
+         <callee>FRAMCtl_fillMemory32</callee>
+         <callee>GPIO_toggleOutputOnPin</callee>
+      </function>
+      <function>
+         <name>WDT_A_hold</name>
+         <stack_size>0x4</stack_size>
+         <makes_indirect_call>false</makes_indirect_call>
+         <file>../driverlib/MSP430FR5xx_6xx/wdt_a.c</file>
+         <line>0x34</line>
+         <address>0x100d4</address>
+         <is_combined>false</is_combined>
+         <definition_seen>true</definition_seen>
+         <has_stack_usage_info>true</has_stack_usage_info>
+         <producer>TI MSP430 C/C++ Codegen PC v16.9.6.LTS Copyright (c) 2003-2017 Texas Instruments Incorporated</producer>
+      </function>
+      <function>
+         <name>GPIO_setAsOutputPin</name>
+         <stack_size>0x4</stack_size>
+         <makes_indirect_call>false</makes_indirect_call>
+         <file>../driverlib/MSP430FR5xx_6xx/gpio.c</file>
+         <line>0x8e</line>
+         <address>0x10074</address>
+         <is_combined>false</is_combined>
+         <definition_seen>true</definition_seen>
+         <has_stack_usage_info>true</has_stack_usage_info>
+         <producer>TI MSP430 C/C++ Codegen PC v16.9.6.LTS Copyright (c) 2003-2017 Texas Instruments Incorporated</producer>
+      </function>
+      <function>
+         <name>PMM_unlockLPM5</name>
+         <stack_size>0x4</stack_size>
+         <makes_indirect_call>false</makes_indirect_call>
+         <file>../driverlib/MSP430FR5xx_6xx/pmm.c</file>
+         <line>0x6a</line>
+         <address>0x10126</address>
+         <is_combined>false</is_combined>
+         <definition_seen>true</definition_seen>
+         <has_stack_usage_info>true</has_stack_usage_info>
+         <producer>TI MSP430 C/C++ Codegen PC v16.9.6.LTS Copyright (c) 2003-2017 Texas Instruments Incorporated</producer>
+      </function>
+      <function>
+         <name>FRAMCtl_fillMemory32</name>
+         <stack_size>0x4</stack_size>
+         <makes_indirect_call>false</makes_indirect_call>
+         <file>../driverlib/MSP430FR5xx_6xx/framctl.c</file>
+         <line>0x57</line>
+         <address>0x10110</address>
+         <is_combined>false</is_combined>
+         <definition_seen>true</definition_seen>
+         <has_stack_usage_info>true</has_stack_usage_info>
+         <producer>TI MSP430 C/C++ Codegen PC v16.9.6.LTS Copyright (c) 2003-2017 Texas Instruments Incorporated</producer>
+      </function>
+      <function>
+         <name>GPIO_toggleOutputOnPin</name>
+         <stack_size>0x4</stack_size>
+         <makes_indirect_call>false</makes_indirect_call>
+         <file>../driverlib/MSP430FR5xx_6xx/gpio.c</file>
+         <line>0x121</line>
+         <address>0x100f4</address>
+         <is_combined>false</is_combined>
+         <definition_seen>true</definition_seen>
+         <has_stack_usage_info>true</has_stack_usage_info>
+         <producer>TI MSP430 C/C++ Codegen PC v16.9.6.LTS Copyright (c) 2003-2017 Texas Instruments Incorporated</producer>
+      </function>
+      <function>
+         <name>_c_int00_noinit_noargs_noexit_mpu</name>
+         <stack_size>0x0</stack_size>
+         <makes_indirect_call>false</makes_indirect_call>
+         <file>boot_special.c</file>
+         <line>0x9f</line>
+         <address>0x4800</address>
+         <is_combined>false</is_combined>
+         <definition_seen>true</definition_seen>
+         <has_stack_usage_info>true</has_stack_usage_info>
+         <producer>TI MSP430 C/C++ Codegen Unix v16.9.6.LTS Copyright (c) 2003-2017 Texas Instruments Incorporated</producer>
+         <callee>main</callee>
+         <callee>__mpu_init</callee>
+         <callee>_system_pre_init</callee>
+         <callee>abort</callee>
+      </function>
+      <function>
+         <name>__mpu_init</name>
+         <stack_size>0x4</stack_size>
+         <makes_indirect_call>false</makes_indirect_call>
+         <file>mpu_init.c</file>
+         <line>0x33</line>
+         <address>0x100a8</address>
+         <is_combined>false</is_combined>
+         <definition_seen>true</definition_seen>
+         <has_stack_usage_info>true</has_stack_usage_info>
+         <producer>TI MSP430 C/C++ Codegen Unix v16.9.3.LTS Copyright (c) 2003-2017 Texas Instruments Incorporated</producer>
+      </function>
+      <function>
+         <name>_system_pre_init</name>
+         <stack_size>0x4</stack_size>
+         <makes_indirect_call>false</makes_indirect_call>
+         <file>pre_init.c</file>
+         <line>0x38</line>
+         <address>0x10132</address>
+         <is_combined>false</is_combined>
+         <definition_seen>true</definition_seen>
+         <has_stack_usage_info>true</has_stack_usage_info>
+         <producer>TI MSP430 C/C++ Codegen Unix v16.9.6.LTS Copyright (c) 2003-2017 Texas Instruments Incorporated</producer>
+      </function>
+      <function>
+         <name>abort</name>
+         <stack_size>0x4</stack_size>
+         <makes_indirect_call>false</makes_indirect_call>
+         <file>exit.c</file>
+         <line>0x63</line>
+         <address>0x1012c</address>
+         <is_combined>false</is_combined>
+         <definition_seen>true</definition_seen>
+         <has_stack_usage_info>true</has_stack_usage_info>
+         <producer>TI MSP430 C/C++ Codegen Unix v16.9.6.LTS Copyright (c) 2003-2017 Texas Instruments Incorporated</producer>
+      </function>
+   </call_graph>
+</ofd>

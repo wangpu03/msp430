@@ -1,0 +1,53 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+SHELL = cmd.exe
+
+# Add inputs and outputs from these tool invocations to the build variables 
+CMD_SRCS += \
+../lnk_msp430fr5969.cmd 
+
+C_SRCS += \
+../clock_func.c \
+../io_func.c \
+../main.c \
+../mode_func.c \
+../uart_common.c 
+
+C_DEPS += \
+./clock_func.d \
+./io_func.d \
+./main.d \
+./mode_func.d \
+./uart_common.d 
+
+OBJS += \
+./clock_func.obj \
+./io_func.obj \
+./main.obj \
+./mode_func.obj \
+./uart_common.obj 
+
+OBJS__QUOTED += \
+"clock_func.obj" \
+"io_func.obj" \
+"main.obj" \
+"mode_func.obj" \
+"uart_common.obj" 
+
+C_DEPS__QUOTED += \
+"clock_func.d" \
+"io_func.d" \
+"main.d" \
+"mode_func.d" \
+"uart_common.d" 
+
+C_SRCS__QUOTED += \
+"../clock_func.c" \
+"../io_func.c" \
+"../main.c" \
+"../mode_func.c" \
+"../uart_common.c" 
+
+

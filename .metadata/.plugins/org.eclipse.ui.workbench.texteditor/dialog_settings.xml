@@ -2,22 +2,30 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="5969" key="selection"/>
+		<item value="case" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="#define"/>
+			<item value="__MSP430_HAS_ADC10_A__"/>
+			<item value="JMBOUTIFG"/>
+			<item value="SYSJTAGPIN"/>
+			<item value="SYSRSTIV"/>
+			<item value="SFR_16BIT(SYSRSTIV);                          /* Reset vector generator */"/>
+			<item value="_system_pre_init"/>
 			<item value="5969"/>
 		</list>
 		<list key="replacehistory">
+			<item value="case"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="336" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 		<item value="454" key="DIALOG_HEIGHT"/>
-		<item value="801" key="DIALOG_X_ORIGIN"/>
-		<item value="228" key="DIALOG_Y_ORIGIN"/>
+		<item value="911" key="DIALOG_X_ORIGIN"/>
+		<item value="369" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>

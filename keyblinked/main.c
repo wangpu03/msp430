@@ -37,9 +37,10 @@ __interrupt void PORT1_ISR(void){
     }
 
     if(P1IFG & BIT1){                       //判断按键是否按下
-        P1OUT ^= BIT0;
+        P1OUT ^= BIT0 + BIT2;
+
         while((P1IN & pushkey) != pushkey);  //判断按键是否松开
-        P1OUT ^= BIT0;
+        P1OUT ^= BIT0 + BIT2;
     }
 
     P1IFG = 0x00;

@@ -7,7 +7,7 @@
  */
 void main(void)
 {
-//	WDTCTL = WDTPW | WDTHOLD;	            // stop watchdog timer
+//	WDTCTL = WDTPW | WDTHOLD;	                // stop watchdog timer
 //    PM5CTL0 &= ~LOCKLPM5;                   // Disable the GPIO power-on default high-impedance mode
     WDT_init();
 

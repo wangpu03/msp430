@@ -1,0 +1,73 @@
+
+**** Build of configuration Debug for project measure ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+'Building file: "../main.c"'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.6.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Code file/c-code/msp430/measure" --include_path="C:/Code file/c-code/msp430/measure/driverlib/MSP430FR5xx_6xx" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.6.LTS/include" --advice:power="all" --advice:hw_config=all --define=__MSP430FR5969__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 74: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../main.c", line 77: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../main.c", line 90: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../main.c", line 96: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../main.c", line 174: remark #1546-D: (ULP 15.1) Detected consecutive bitfield assigns. Recommend using bit mask instead
+"../main.c", line 175: remark #1546-D: (ULP 15.1) Detected consecutive bitfield assigns. Recommend using bit mask instead
+"../main.c", line 176: remark #1546-D: (ULP 15.1) Detected consecutive bitfield assigns. Recommend using bit mask instead
+"../main.c", line 177: remark #1546-D: (ULP 15.1) Detected consecutive bitfield assigns. Recommend using bit mask instead
+"../main.c", line 178: remark #1546-D: (ULP 15.1) Detected consecutive bitfield assigns. Recommend using bit mask instead
+"../main.c", line 179: remark #1546-D: (ULP 15.1) Detected consecutive bitfield assigns. Recommend using bit mask instead
+"../main.c", line 180: remark #1546-D: (ULP 15.1) Detected consecutive bitfield assigns. Recommend using bit mask instead
+"../main.c", line 181: remark #1546-D: (ULP 15.1) Detected consecutive bitfield assigns. Recommend using bit mask instead
+"../main.c", line 215: remark #1528-D: (ULP 3.1) Detected flag polling using EUSCI_A_UART_BUSY. Recommend using an interrupt combined with enter LPMx and ISR
+"../main.c", line 210: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../main.c", line 234: remark #1528-D: (ULP 3.1) Detected flag polling using EUSCI_A_UART_BUSY. Recommend using an interrupt combined with enter LPMx and ISR
+"../main.c", line 251: remark #1538-D: (ULP 10.1) ISR USCI_A0_ISR calls function EUSCI_A_UART_receiveData. Recommend moving function call away from ISR, or inlining the function, or using pragmas
+"../main.c", line 48: remark #1535-D: (ULP 8.1) variable "RXData" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+'Finished building: "../main.c"'
+ 
+'Building target: "measure.out"'
+'Invoking: MSP430 Linker'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.6.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power="all" --advice:hw_config=all --define=__MSP430FR5969__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"measure.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccsv7/ccs_base/msp430/include" -i"C:/ti/ccsv7/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccsv7/ccs_base/msp430/lib/FR59xx" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.6.LTS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.6.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="measure_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "measure.out" "./LiveTempMode.obj" "./main.obj" "./driverlib/MSP430FR5xx_6xx/adc12_b.obj" "./driverlib/MSP430FR5xx_6xx/aes256.obj" "./driverlib/MSP430FR5xx_6xx/comp_e.obj" "./driverlib/MSP430FR5xx_6xx/crc.obj" "./driverlib/MSP430FR5xx_6xx/crc32.obj" "./driverlib/MSP430FR5xx_6xx/cs.obj" "./driverlib/MSP430FR5xx_6xx/dma.obj" "./driverlib/MSP430FR5xx_6xx/esi.obj" "./driverlib/MSP430FR5xx_6xx/eusci_a_spi.obj" "./driverlib/MSP430FR5xx_6xx/eusci_a_uart.obj" "./driverlib/MSP430FR5xx_6xx/eusci_b_i2c.obj" "./driverlib/MSP430FR5xx_6xx/eusci_b_spi.obj" "./driverlib/MSP430FR5xx_6xx/framctl.obj" "./driverlib/MSP430FR5xx_6xx/gpio.obj" "./driverlib/MSP430FR5xx_6xx/lcd_c.obj" "./driverlib/MSP430FR5xx_6xx/mpu.obj" "./driverlib/MSP430FR5xx_6xx/mpy32.obj" "./driverlib/MSP430FR5xx_6xx/pmm.obj" "./driverlib/MSP430FR5xx_6xx/ram.obj" "./driverlib/MSP430FR5xx_6xx/ref_a.obj" "./driverlib/MSP430FR5xx_6xx/rtc_b.obj" "./driverlib/MSP430FR5xx_6xx/rtc_c.obj" "./driverlib/MSP430FR5xx_6xx/sfr.obj" "./driverlib/MSP430FR5xx_6xx/sysctl.obj" "./driverlib/MSP430FR5xx_6xx/timer_a.obj" "./driverlib/MSP430FR5xx_6xx/timer_b.obj" "./driverlib/MSP430FR5xx_6xx/tlv.obj" "./driverlib/MSP430FR5xx_6xx/wdt_a.obj" "../lnk_msp430fr5969.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+warning #10420-D: For FRAM devices, at start up, the GPIO power-on default high-impedance mode needs to be disabled to activate previously configured port settings. This can be done by clearing the LOCKLPM5 bit in PM5CTL0 register.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: "measure.out"'
+ 
+'Building files: "measure.out"'
+'Invoking: MSP430 Hex Utility'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.6.LTS/bin/hex430" --memwidth=8 --romwidth=8 --ti_txt -o "measure.txt"  "measure.out" 
+Translating to TI-TXT format...
+   "measure.out" .cinit ==> .cinit
+   "measure.out" .const ==> .const
+   "measure.out" .text ==> .text
+   "measure.out" AES256 ==> AES256
+   "measure.out" RTC ==> RTC
+   "measure.out" PORT4 ==> PORT4
+   "measure.out" PORT3 ==> PORT3
+   "measure.out" TIMER3_A1 ==> TIMER3_A1
+   "measure.out" TIMER3_A0 ==> TIMER3_A0
+   "measure.out" PORT2 ==> PORT2
+   "measure.out" TIMER2_A1 ==> TIMER2_A1
+   "measure.out" TIMER2_A0 ==> TIMER2_A0
+   "measure.out" PORT1 ==> PORT1
+   "measure.out" TIMER1_A1 ==> TIMER1_A1
+   "measure.out" TIMER1_A0 ==> TIMER1_A0
+   "measure.out" DMA ==> DMA
+   "measure.out" USCI_A1 ==> USCI_A1
+   "measure.out" TIMER0_A1 ==> TIMER0_A1
+   "measure.out" TIMER0_A0 ==> TIMER0_A0
+   "measure.out" ADC12 ==> ADC12
+   "measure.out" USCI_B0 ==> USCI_B0
+   "measure.out" USCI_A0 ==> USCI_A0
+   "measure.out" WDT ==> WDT
+   "measure.out" TIMER0_B1 ==> TIMER0_B1
+   "measure.out" TIMER0_B0 ==> TIMER0_B0
+   "measure.out" COMP_E ==> COMP_E
+   "measure.out" UNMI ==> UNMI
+   "measure.out" SYSNMI ==> SYSNMI
+   "measure.out" .reset ==> .reset
+'Finished building: "measure.out"'
+ 
+
+**** Build Finished ****
